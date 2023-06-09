@@ -14,14 +14,14 @@ const storage = multer.diskStorage({
     }
 })
 
-const fileFilter = (req,file,cb)=>{
-    const allowedFileTypes  = ['image/png', 'image/jpg','img/jpeg'];
-    if(allowedFileTypes.includes(file.mimetype)){
-        cb(null,true);
-    }else{
-        cb(null,false);
+const fileFilter = (req, file, cb) => {
+    const allowedFileTypes = ['image/jpeg', 'image/png', 'image/gif'];
+    if (allowedFileTypes.includes(file.mimetype)) {
+      cb(null, true);
+    } else {
+      cb(null, false);
     }
-}
+  };
 
 
 
@@ -82,7 +82,12 @@ app.post("/create", upload.single("image"), async (req, res) => {
       console.log(err);
       res.status(500).json({ error: "Failed to create restaurant" });
     }
-  });
+});
+
+//delete
+app.delete("/delete/:id", (req, res) => {
+    console.log(req.params.id);
+});
 
 
 app.listen(3001,function(){

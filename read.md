@@ -16,3 +16,8 @@
 Use `mongodb://127.0.0.1:27017` insted of `mongodb://localhost:27017` for the database connection
 
 for image upload checkout this link [image upload](https://mathursanb.medium.com/how-to-upload-images-using-multer-in-the-mern-stack-206428aad007) using multer.
+
+## problems
+1. Only png images can be uploaded.
+2. 
+
