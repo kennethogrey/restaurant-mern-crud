@@ -10,3 +10,9 @@
 9.  cd into `cd client` when and run `npm i axios react-router-dom react-bootstrap bootstrap`
 10. `cd client/src/index.js` and add `import 'bootstrap/dist/css/bootstrap.min.css';`
 11. `cd client` and run `npm start` to start react application
+
+
+
+Use `mongodb://127.0.0.1:27017` insted of `mongodb://localhost:27017` for the database connection
+
+for image upload checkout this link [image upload](https://mathursanb.medium.com/how-to-upload-images-using-multer-in-the-mern-stack-206428aad007) using multer.
