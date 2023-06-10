@@ -3,6 +3,7 @@ const cors = require("cors");
 const mongoose  = require("mongoose");
 const multer = require("multer");
 const path = require("path");
+const fs = require("fs");
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -84,9 +85,34 @@ app.post("/create", upload.single("image"), async (req, res) => {
     }
 });
 
+app.get("/restaurants", (req, res) => {
+  Restaurant.find()
+    .then((items) => res.json(items))
+    .catch((err) => console.log(err));
+});
+
 //delete
 app.delete("/delete/:id", (req, res) => {
-    console.log(req.params.id);
+  Restaurant.findByIdAndDelete(req.params.id)
+    .then((doc) => {
+      if (doc) {
+        // Check if the image field is not null
+        if (doc.image) {
+          // Delete the associated image from local storage
+          // const imagePath = path.join(__dirname, "client", "public", "images", doc.image);
+          // fs.unlinkSync(imagePath);
+          console.log(doc.image);
+          localStorage.removeItem("./client/public/images/"+doc.image);
+        }
+        res.send(doc); // Return the deleted document
+      } else {
+        res.status(404).send("Document not found"); // Document with the specified ID was not found
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send("Internal Server Error"); // Error occurred while deleting the document
+    });
 });
 
 
