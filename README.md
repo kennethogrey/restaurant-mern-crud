@@ -17,9 +17,9 @@
 15. To create an we restaurant click on `New Restaurant` button on the home page.
 
 ## Other instructions
-Use `mongodb://127.0.0.1:27017` insted of `mongodb://localhost:27017` for the database connection
+1. Use `mongodb://127.0.0.1:27017` insted of `mongodb://localhost:27017` for the database connection
 
-for image upload checkout this link [image upload](https://mathursanb.medium.com/how-to-upload-images-using-multer-in-the-mern-stack-206428aad007) using multer.
+2. for image upload checkout this link [image upload](https://mathursanb.medium.com/how-to-upload-images-using-multer-in-the-mern-stack-206428aad007) using multer.
 
 ## Dependencies
 1. react bootstrap : [installation](https://react-bootstrap.github.io/docs/getting-started/introduction)
