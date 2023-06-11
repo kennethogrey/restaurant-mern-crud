@@ -1,4 +1,3 @@
-# restaurant-mern-crud
 # Creating a restaurant MERN crud app
 1. create create a folder where you want to install you applicatoon eg. `mern-crud`
 2. cd into your folder with `cd mern-crud`
