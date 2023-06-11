@@ -16,10 +16,13 @@
 14. To view all restaurants click on `All Restaurants` button on the home page.
 15. To create an we restaurant click on `New Restaurant` button on the home page.
 
-
-
+## Other instructions
 Use `mongodb://127.0.0.1:27017` insted of `mongodb://localhost:27017` for the database connection
 
 for image upload checkout this link [image upload](https://mathursanb.medium.com/how-to-upload-images-using-multer-in-the-mern-stack-206428aad007) using multer.
+
+## Dependencies
+1. react bootstrap : [installation](https://react-bootstrap.github.io/docs/getting-started/introduction)
+2. multer: This is used for image upload on local storage : [installation](https://www.npmjs.com/package/multer)
 
 
