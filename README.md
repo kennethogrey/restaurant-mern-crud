@@ -25,7 +25,7 @@
 1. react bootstrap : [installation](https://react-bootstrap.github.io/docs/getting-started/introduction)
 2. multer: This is used for image upload on local storage : [installation](https://www.npmjs.com/package/multer)
 
-#To run the project
+# To run the project
 1. open the root directory of the project in the terminal and run `npm install`
 2. then run `node server.js` to start the server
 3. keep the server running and open a new terminal window and cd into the client directory and also run `npm install`
