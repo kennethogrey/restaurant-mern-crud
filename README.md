@@ -7,7 +7,7 @@
 6.  create `app.js` file for all your application endpoints in the root folder.
 7.  create `server.js` file in the root folder
 8.  create mongodb database with collection and copy the connection String which is going to be used in the `app.js` file for mongodb connection sample connection string `mongodb://localhost:27017/name_of_your_database` for a local connection and `mongodb+srv://<user>:<password>@cluster0-un6sk.mongodb.net/test? 
-    retryWrites=true` and replace username and password with your details from mongodb atlas.
+    retryWrites=true` and replace username and password with your details for mongodb atlas connection.
 9.  setup the `server.js` file and run `node server.js` in terminal to start the server.
 10. open localhost and type url eg`localhost:port` where port is the port specified int the `server.js` file eg `3001`
 11. cd into `cd client` when and run `npm i axios react-router-dom react-bootstrap bootstrap`
